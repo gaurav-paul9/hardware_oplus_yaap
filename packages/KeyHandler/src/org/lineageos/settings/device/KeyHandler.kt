@@ -199,5 +199,10 @@ class KeyHandler(private val context: Context) : DeviceKeyHandler {
         // Vibration effects
         private val MODE_NORMAL_EFFECT = VibrationEffect.get(VibrationEffect.EFFECT_HEAVY_CLICK)
         private val MODE_VIBRATION_EFFECT = VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK)
+
+    }
+
+    override fun onPocketStateChanged(isInPocket: Boolean) {
+    // Device does not use pocket mode. No-op.
     }
 }
